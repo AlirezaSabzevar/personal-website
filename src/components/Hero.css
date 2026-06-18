@@ -1,0 +1,536 @@
+.hero{
+  /* min-height:85vh; */
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  width:90%;
+  margin:auto;
+  scroll-margin-top: 120px;
+}
+
+.hero-left{
+  text-align: right;
+}
+
+.hero-left h1{
+  font-size:70px;
+  font-weight:800;
+  margin-bottom: 3rem;
+}
+
+.hero-left h2{
+  font-size:35px;
+  margin-bottom: 2rem;
+  color:#2563eb;
+}
+
+.hero-left h3{
+  margin-top:20px;
+  font-size:23px;
+}
+
+.hero-left p{
+  margin-top:25px;
+  line-height:2;
+  /* max-width:450px; */
+  margin-left: 80px;
+  color:#bfc6d1;
+  text-align: justify;
+  direction: rtl;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 20px;
+  background:#111827;
+  border-radius:999px;
+  margin:30px 0;
+}
+
+.badge span{
+  width:10px;
+  height:10px;
+  background:#00ff73;
+  border-radius:50%;
+}
+
+.buttons{
+  direction: rtl;
+  margin-top:35px;
+  display:flex;
+  gap:20px;
+}
+
+.primary{
+  font-size: 1.05rem;
+  padding:18px 35px;
+  border:none;
+  border-radius:15px;
+  cursor: pointer;
+  background:linear-gradient(
+  135deg,
+  #2563eb,
+  #3b82f6
+  );
+
+  color:white;
+}
+.primary:hover{
+    background:linear-gradient(
+  135deg,
+  #163c8f,
+  #2c5dac
+  );
+  transition:.3s;
+
+}
+
+.secondary{
+  font-size: 1.1rem;
+  padding:18px 35px;
+  border-radius:15px;
+  cursor: pointer;
+  border:1px solid rgba(255,255,255,.15);
+  background:transparent;
+  color:white;
+}
+.secondary:hover{
+  background: #454b5d;
+  transition:.3s;
+}
+
+.pricing-modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(8px);
+
+    z-index:9999;
+}
+
+.pricing-modal{
+
+    direction: rtl;
+
+    width:500px;
+
+    max-width:90%;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 0 40px rgba(37,99,235,.25);
+}
+
+.pricing-modal h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.pricing-modal p{
+
+    color:#a8b3c5;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.pricing-actions{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:20px;
+}
+
+.pricing-actions a{
+
+    flex:1;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+    );
+
+    transition:.3s;
+}
+
+.pricing-actions a:hover{
+
+    transform:
+    translateY(-3px);
+}
+
+.close-pricing-modal{
+
+    font-size: 1rem;
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+    rgba(255,255,255,.05);
+}
+
+
+
+.contract-modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(8px);
+
+    z-index:9999;
+}
+
+.contract-modal{
+
+    direction: rtl;
+
+    width:500px;
+
+    max-width:90%;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 0 40px rgba(37,99,235,.25);
+}
+
+.contract-modal h3{
+
+    font-size:25px;
+
+    margin-bottom:15px;
+}
+
+.contract-modal p{
+
+    color:#a8b3c5;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.contract-actions a{
+
+    display: block;
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-bottom: 20px;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+    );
+
+    transition:.3s;
+}
+
+.contract-actions a:hover{
+
+    transform:
+    translateY(-3px);
+}
+
+.close-contract-modal{
+
+    font-size: 1rem;
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+    rgba(255,255,255,.05);
+}
+
+
+
+
+
+.socials{
+  direction: rtl;
+  margin-top:35px;
+  display:flex;
+  gap:20px;
+}
+
+.socials a{
+  width:60px;
+  height:60px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,255,255,.1);
+
+  color:white;
+  font-size:22px;
+}
+.socials a:hover{
+  background: #0c1a41;
+  transition:.3s;
+
+}
+
+.hero-right{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-right img{
+  width:600px;
+  position:relative;
+  z-index:2;
+}
+
+
+
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px){
+
+  .hero{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+    margin-top:40px;
+  }
+
+  .hero-left{
+    order:2;
+    text-align:center;
+  }
+
+  .hero-right{
+    order:1;
+  }
+
+  .hero-left p{
+    margin-left:0;
+    text-align:center;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .socials{
+    justify-content:center;
+  }
+
+  .hero-right img{
+    width:420px;
+    max-width:100%;
+  }
+
+  .hero-left h1{
+    font-size:55px;
+  }
+
+  .hero-left h2{
+    font-size:30px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+  .hero{
+    width:95%;
+    gap:30px;
+  }
+
+  .badge{
+    margin:15px auto;
+  }
+
+  .hero-left h1{
+    font-size:42px;
+    margin-bottom:20px;
+  }
+
+  .hero-left h2{
+    font-size:24px;
+    margin-bottom:15px;
+  }
+
+  .hero-left h3{
+    font-size:18px;
+  }
+
+  .hero-left p{
+    font-size:15px;
+    line-height:2;
+  }
+
+  .hero-right img{
+    width:300px;
+    max-width:100%;
+  }
+
+  .buttons{
+    flex-direction:column;
+    gap:15px;
+    align-items:stretch;
+  }
+
+  .primary,
+  .secondary{
+    width:100%;
+    padding:16px;
+    font-size:15px;
+  }
+
+  .socials{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .socials a{
+    width:50px;
+    height:50px;
+    font-size:18px;
+  }
+
+  .pricing-modal,
+  .contract-modal{
+    padding:25px;
+  }
+
+  .pricing-actions{
+    flex-direction:column;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+  .hero-left h1{
+    font-size:34px;
+  }
+
+  .hero-left h2{
+    font-size:20px;
+  }
+
+  .hero-left h3{
+    font-size:16px;
+  }
+
+  .hero-right img{
+    width:240px;
+  }
+
+  .badge{
+    font-size:13px;
+    padding:10px 16px;
+  }
+
+}
