@@ -21,36 +21,27 @@ export default function Navbar() {
 
     sections.forEach((section) => {
 
-      const sectionTop =
-        section.offsetTop - 150;
+      const sectionTop = section.offsetTop - 150;
 
-      const sectionHeight =
-        section.clientHeight;
+      const sectionHeight = section.clientHeight;
 
       if (
         window.scrollY >= sectionTop &&
-        window.scrollY <
-          sectionTop + sectionHeight
-      ) {
+        window.scrollY < sectionTop + sectionHeight
+        ) 
+      {
         current = section.getAttribute("id");
       }
 
     });
 
-    setActiveSection(current);
+      setActiveSection(current);
 
   };
 
-  window.addEventListener(
-    "scroll",
-    handleScroll
-  );
+  window.addEventListener("scroll", handleScroll);
 
-  return () =>
-    window.removeEventListener(
-      "scroll",
-      handleScroll
-    );
+  return () => window.removeEventListener("scroll", handleScroll);
 
   }, []);
 

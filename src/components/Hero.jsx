@@ -1,5 +1,5 @@
 import "./Hero.css";
-import profile from "../assets/Gemini2.png";
+// import profile from "../assets/Gemini2.png";
 
 import {
   FaGithub,
@@ -8,13 +8,32 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getProfile } from "./api";
 
 
 export default function Hero() {
 
+  const [profile, setProfile] = useState(null);
+
   const [showPricingModal, setShowPricingModal] = useState(false);
   const [showContractModal, setShowContractModal] = useState(false);
+
+  useEffect(() => {
+    getProfile()
+      .then((data) => {
+        setProfile(data);
+        console.log("✅ Hero Profile API Response:", data);
+      })
+      .catch((error) => {
+        console.error("❌ Hero Profile API Error:", error);
+      });
+  }, []);
+
+
+  if (!profile) {
+    return null;
+  }
 
   return (
     <>
@@ -22,27 +41,35 @@ export default function Hero() {
 
       <div className="hero-right">
 
-        <img src={profile} alt=""/>
+        {/* <img src={profile} alt=""/> */}
+        <img src={profile.image} alt={profile.name} />
       </div>
 
       <div className="hero-left">
 
         <div className="badge">
           <span></span>
-          Frontend Developer
+          {/* Frontend Developer */}
+          {profile.availability_label}
         </div>
 
-        <h1>علیرضا سبزوار</h1>
+        {/* <h1>علیرضا سبزوار</h1> */}
+        <h1>{profile.name}</h1>
 
-        <h2>توسعه دهنده فرانت‌اند</h2>
+        {/* <h2>توسعه دهنده فرانت‌اند</h2> */}
+        <h2>{profile.role_title}</h2>
 
-        <h3>React.js & JavaScript</h3>
+        {/* <h3>React.js & JavaScript</h3> */}
+        <h3>{profile.subtitle}</h3>
 
-        <p>
+        {/* <p>
           تخصص من در طراحی و توسعه رابط‌های کاربری مدرن
           و واکنش‌گرا با استفاده از جدیدترین تکنولوژی‌های
           وب است. عاشق نوشتن کد تمیز و ساخت تجربه‌های
           کاربری فوق‌العاده هستم.
+        </p> */}
+        <p>
+          {profile.bio}
         </p>
 
         <div className="buttons">
