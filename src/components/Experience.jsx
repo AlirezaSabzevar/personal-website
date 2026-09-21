@@ -85,10 +85,6 @@ export default function Experience() {
               {item.year}
             </div>
 
-            <div className="timeline">
-              <div className="timeline-dot"></div>
-            </div>
-
             <div className="experience-card">
 
               {/* <div className="experience-icon">
@@ -112,6 +108,10 @@ export default function Experience() {
               </div>
 
             </div>
+            <div className="timeline">
+              <div className="timeline-dot"></div>
+            </div>
+
 
           </div>
         ))}
