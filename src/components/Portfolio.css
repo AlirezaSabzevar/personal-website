@@ -275,8 +275,8 @@
 ========================= */
 
 .projects-swiper .swiper-pagination {
-  bottom: 0 !important;
-  top: 30px !important;
+  bottom: auto !important;
+  /* top: 30px !important; */
 
   display: flex;
   justify-content: center;
