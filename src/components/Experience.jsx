@@ -84,6 +84,10 @@ export default function Experience() {
             <div className="experience-year">
               {item.year}
             </div>
+            
+            <div className="timeline">
+              <div className="timeline-dot"></div>
+            </div>
 
             <div className="experience-card">
 
@@ -107,9 +111,6 @@ export default function Experience() {
                 {item.status === "P" ? "در حال انجام" : "تکمیل شده"}
               </div>
 
-            </div>
-            <div className="timeline">
-              <div className="timeline-dot"></div>
             </div>
 
 

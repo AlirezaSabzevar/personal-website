@@ -16,6 +16,7 @@
   font-size:70px;
   font-weight:800;
   margin-bottom: 3rem;
+  color: white;
 }
 
 .hero-left h2{
@@ -448,7 +449,6 @@
   }
 
   .hero-left h1{
-    color: aliceblue;
     font-size:42px;
     margin-bottom:20px;
   }
@@ -515,7 +515,6 @@
 
   .hero-left h1{
     font-size:34px;
-    color: aliceblue;
   }
 
   .hero-left h2{
