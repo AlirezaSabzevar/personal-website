@@ -3,7 +3,7 @@ import "./SezarPolicy.css";
 const principles = [
   {
     number: "01",
-    title: "کمتر",
+    title: "ساده",
     subtitle: "SIMPLE",
     text: "هر چیزی که لازم نیست، حذف می‌شود.",
   },
@@ -62,17 +62,17 @@ export default function SezarPolicy() {
                 <p>{principle.text}</p>
               </div>
 
-              <span className="sezar-policy-card-mark" aria-hidden="true">
-                ↗
-              </span>
             </article>
           ))}
         </div>
 
         <div className="sezar-policy-signature" aria-label="Sezar built this">
-          <span className="sezar-policy-signature-brand">SEZAR</span>
-          <span className="sezar-policy-signature-line" />
-          <span className="sezar-policy-signature-text">built this</span>
+            <section className="sezar-policy-signature-sec-one">
+                <span className="sezar-policy-signature-brand">sezar built this.</span>
+            </section>
+            <section className="sezar-policy-signature-sec-two">
+                تمامی حقوق این وب‌سایت متعلق به علیرضا سبزوار است. ©️
+            </section>
         </div>
 
       </div>
