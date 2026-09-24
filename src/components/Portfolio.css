@@ -276,7 +276,7 @@
 
 .projects-swiper .swiper-pagination {
   /* bottom: auto !important; */
-  top: 30px !important;
+  top: 60px !important;
 
   display: flex;
   justify-content: center;
