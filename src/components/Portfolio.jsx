@@ -104,6 +104,7 @@ export default function Portfolio() {
         }}
 
         pagination={{
+        el: ".projects-pagination",
         clickable: true,
         }}
 
@@ -178,6 +179,8 @@ export default function Portfolio() {
         ))}
 
       </Swiper>
+
+      <div className="projects-pagination"></div>
 
 
       {

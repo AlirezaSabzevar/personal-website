@@ -256,69 +256,70 @@
 
 
 
-
 /* =========================
    Projects Swiper
 ========================= */
 
 .projects-swiper {
-  --swiper-pagination-color: #2563eb;
-  --swiper-pagination-bullet-inactive-color: #ffffff;
-  --swiper-pagination-bullet-inactive-opacity: 0.45;
-
-  padding-bottom: 70px;
+    width: 100%;
 }
 
 
 /* =========================
-   Pagination
+   Custom Pagination
 ========================= */
 
-.projects-swiper .swiper-pagination {
-  position: absolute !important;
+.projects-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  top: auto !important;
-  bottom: -15px !important;
+    gap: 6px;
 
-  left: 0;
-  width: 100%;
+    margin-top: 25px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 6px;
+    min-height: 12px;
 }
 
 
-/* Bullet */
 
-.projects-swiper .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
 
-  margin: 0 !important;
 
-  background: rgba(255, 255, 255, 0.45);
-  opacity: 1;
+/* =========================
+   Pagination Bullets
+========================= */
 
-  transition:
-    width 0.3s ease,
-    background-color 0.3s ease,
-    transform 0.3s ease;
+.projects-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+
+    margin: 0 !important;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    opacity: 1;
+
+    border-radius: 50%;
+
+    transition:
+        width 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 
-/* Active Bullet */
+/* =========================
+   Active Bullet
+========================= */
 
-.projects-swiper .swiper-pagination-bullet-active {
-  width: 28px;
+.projects-pagination .swiper-pagination-bullet-active {
+    width: 28px;
 
-  border-radius: 20px;
+    border-radius: 20px;
 
-  background: #2563eb;
+    background: #2563eb;
 
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 
