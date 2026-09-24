@@ -48,9 +48,9 @@ export default function Hero() {
       <div className="hero-left">
 
         <div className="badge">
-          <span></span>
           {/* Frontend Developer */}
           {profile.availability_label}
+          <span></span>
         </div>
 
         {/* <h1>علیرضا سبزوار</h1> */}
