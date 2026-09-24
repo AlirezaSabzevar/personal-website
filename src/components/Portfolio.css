@@ -278,7 +278,7 @@
   position: absolute !important;
 
   top: auto !important;
-  bottom: 15px !important;
+  bottom: 0 !important;
 
   left: 0;
   width: 100%;
