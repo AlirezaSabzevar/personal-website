@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import SezarPolicy from "./components/SezarPolicy";
 import "./App.css";
 
 
@@ -19,6 +20,7 @@ function App() {
       <Portfolio />
       <Experience />
       <Contact />
+      <SezarPolicy />
     </>
   );
 }
