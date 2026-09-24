@@ -5,7 +5,7 @@
 .sezar-policy {
   width: 90%;
   max-width: 1400px;
-  margin: 90px auto 35px;
+  margin: 0 auto;
   scroll-margin-top: 120px;
 }
 
@@ -145,14 +145,10 @@
 }
 
 .sezar-policy-card-content {
-  margin-top: 34px;
   direction: rtl;
 }
 
 .sezar-policy-card-content h3 {
-  /* margin: 0 0 9px; */
-  /* margin: auto; */
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +159,7 @@
 
 .sezar-policy-card-content p {
   max-width: 220px;
-  margin: 0;
+  margin-top: 10px;
   color: #aeb8c4;
   font-size: 13px;
   line-height: 1.95;
@@ -187,13 +183,14 @@
 
 .sezar-policy-signature-brand {
   color: #aeb8c4;
-  font-size: 13px;
+  font-size: 18px;
   /* font-weight: 800; */
   letter-spacing: 0.16em;
   direction: ltr;
 }
 .sezar-policy-signature-brand .sezar-style{
     color: rgba(255, 255, 0, 0.861);
+    font-weight: 600;
 }
 
 .sezar-policy-signature-sec-two{
@@ -225,7 +222,7 @@
 @media (max-width: 768px) {
   .sezar-policy {
     width: 95%;
-    margin: 65px auto 25px;
+    margin: 0 auto;
   }
 
   .sezar-policy-container {
@@ -275,16 +272,16 @@
   }
 
   .sezar-policy-signature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 26px;
     padding-top: 16px;
   }
 
   .sezar-policy-signature-brand {
     font-size: 13px;
-  }
-
-  .sezar-policy-signature-text {
-    font-size: 12px;
   }
 }
 
