@@ -1,58 +1,80 @@
 import "./SezarPolicy.css";
 
+const principles = [
+  {
+    number: "01",
+    title: "کمتر",
+    subtitle: "SIMPLE",
+    text: "هر چیزی که لازم نیست، حذف می‌شود.",
+  },
+  {
+    number: "02",
+    title: "دقیق",
+    subtitle: "PRECISE",
+    text: "جزئیات کوچک، تفاوت‌های بزرگ می‌سازند.",
+  },
+  {
+    number: "03",
+    title: "انسانی",
+    subtitle: "HUMAN",
+    text: "زیبایی وقتی ارزش دارد که استفاده از آن ساده باشد.",
+  },
+  {
+    number: "04",
+    title: "ماندگار",
+    subtitle: "TIMELESS",
+    text: "ترند می‌گذرد؛ طراحی خوب می‌ماند.",
+  },
+];
+
 export default function SezarPolicy() {
   return (
-    <section className="sezar-policy" aria-labelledby="sezar-policy-title">
-      <div className="sezar-policy__container">
-        <div className="sezar-policy__header">
-          <span className="sezar-policy__eyebrow">SEZAR / MANIFESTO</span>
-          <span className="sezar-policy__line" aria-hidden="true" />
-        </div>
+    <section className="sezar-policy" id="sezar-policy">
+      <div className="sezar-policy-container">
 
-        <div className="sezar-policy__intro">
-          <div className="sezar-policy__title-row">
-            <h2 id="sezar-policy-title">خط‌مشی ما</h2>
-            <span className="sezar-policy__dot" aria-hidden="true" />
+        <div className="sezar-policy-heading">
+          <div className="sezar-policy-kicker">
+            <span>SEZAR</span>
+            <span className="sezar-policy-kicker-line" />
+            <span>PRINCIPLES</span>
           </div>
 
-          <p className="sezar-policy__description">
-            در Sezar، طراحی فقط ساختن یک ظاهر زیبا نیست؛
-            هر پروژه باید ساده، دقیق و قابل اعتماد باشد.
-            ما تلاش می‌کنیم هر چیزی که می‌سازیم، هم برای مخاطب تجربه خوبی ایجاد کند
-            و هم برای صاحب کسب‌وکار ارزش واقعی داشته باشد.
-          </p>
+          <div className="sezar-policy-title-row">
+            <h2>ما به چند چیز باور داریم.</h2>
+            <span className="sezar-policy-dot" aria-hidden="true" />
+          </div>
         </div>
 
-        <div className="sezar-policy__principles">
-          <article className="sezar-policy__principle">
-            <span className="sezar-policy__number">01</span>
-            <div>
-              <h3>سادگی</h3>
-              <p>هر چیزی که ضروری نیست، نباید حواس کاربر را پرت کند.</p>
-            </div>
-          </article>
+        <div className="sezar-policy-grid">
+          {principles.map((principle) => (
+            <article className="sezar-policy-card" key={principle.number}>
+              <div className="sezar-policy-card-top">
+                <span className="sezar-policy-number">
+                  {principle.number}
+                </span>
+                <span className="sezar-policy-subtitle">
+                  {principle.subtitle}
+                </span>
+              </div>
 
-          <article className="sezar-policy__principle">
-            <span className="sezar-policy__number">02</span>
-            <div>
-              <h3>دقت</h3>
-              <p>تفاوت یک تجربه حرفه‌ای، اغلب در جزئیات کوچک شکل می‌گیرد.</p>
-            </div>
-          </article>
+              <div className="sezar-policy-card-content">
+                <h3>{principle.title}</h3>
+                <p>{principle.text}</p>
+              </div>
 
-          <article className="sezar-policy__principle">
-            <span className="sezar-policy__number">03</span>
-            <div>
-              <h3>اعتماد</h3>
-              <p>نتیجه باید از چیزی که وعده داده شده، شفاف و قابل اتکا باشد.</p>
-            </div>
-          </article>
+              <span className="sezar-policy-card-mark" aria-hidden="true">
+                ↗
+              </span>
+            </article>
+          ))}
         </div>
 
-        <div className="sezar-policy__signature" aria-label="Sezar built this">
-          <span className="sezar-policy__signature-brand">SEZAR</span>
-          <span className="sezar-policy__signature-text">built this</span>
+        <div className="sezar-policy-signature" aria-label="Sezar built this">
+          <span className="sezar-policy-signature-brand">SEZAR</span>
+          <span className="sezar-policy-signature-line" />
+          <span className="sezar-policy-signature-text">built this</span>
         </div>
+
       </div>
     </section>
   );
