@@ -97,7 +97,7 @@ export default function Contact() {
       <div className="contact-container">
 
         <h2 className="contact-title">
-          تماس با من
+          ارتباط با من
           <span></span>
         </h2>
 
