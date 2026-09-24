@@ -68,10 +68,10 @@ export default function SezarPolicy() {
 
         <div className="sezar-policy-signature" aria-label="Sezar built this">
             <section className="sezar-policy-signature-sec-one">
-                <span className="sezar-policy-signature-brand">sezar built this.</span>
+                <span className="sezar-policy-signature-brand"><span className="sezar-style">sezar</span> built this.</span>
             </section>
             <section className="sezar-policy-signature-sec-two">
-                تمامی حقوق این وب‌سایت متعلق به علیرضا سبزوار است. ©️
+               ©️ تمامی حقوق این وب‌سایت متعلق به علیرضا سبزوار است. 
             </section>
         </div>
 
