@@ -96,13 +96,16 @@ export default function Portfolio() {
 
       <Swiper
         modules={[Autoplay, Pagination]}
+
         autoplay={{
           delay: 1500,
           disableOnInteraction: false
         }}
+
         pagination={{
         clickable: true,
         }}
+        
         loop={true}
         spaceBetween={25}
         breakpoints={{

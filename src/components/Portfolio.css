@@ -248,11 +248,9 @@
 
 .swiper-pagination-bullet-active{
     background: #2563eb;
-    color: #2563eb;
-    width: 30px;
-    border-radius: 20px;
-    box-shadow:
-    0 0 15px rgba(37,99,235,.6);
+    /* width: 30px; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 15px rgba(37,99,235,.6); */
 }
 
 
