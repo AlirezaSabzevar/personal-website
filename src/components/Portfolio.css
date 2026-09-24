@@ -228,7 +228,7 @@
 
 
 
-.swiper{
+/* .swiper{
     padding-bottom: 70px;
 }
 
@@ -244,13 +244,76 @@
     background: rgba(255, 255, 255, 0.494);
     opacity: 1;
     transition: .3s;
+} */
+
+/* .swiper-pagination-bullet-active{
+    background: #2563eb;
+    width: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(37,99,235,.6);
+} */
+
+
+
+
+
+/* =========================
+   Projects Swiper
+========================= */
+
+.projects-swiper {
+  --swiper-pagination-color: #2563eb;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-inactive-opacity: 0.45;
+
+  padding-bottom: 45px;
 }
 
-.swiper-pagination-bullet-active{
-    background: #2563eb;
-    /* width: 30px; */
-    /* border-radius: 20px; */
-    /* box-shadow: 0 0 15px rgba(37,99,235,.6); */
+
+/* =========================
+   Pagination
+========================= */
+
+.projects-swiper .swiper-pagination {
+  bottom: 0 !important;
+  top: auto !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+/* Bullet */
+
+.projects-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  margin: 0 !important;
+
+  background: rgba(255, 255, 255, 0.45);
+  opacity: 1;
+
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Active Bullet */
+
+.projects-swiper .swiper-pagination-bullet-active {
+  width: 28px;
+
+  border-radius: 20px;
+
+  background: #2563eb;
+
+  transform: scale(1.02);
 }
 
 

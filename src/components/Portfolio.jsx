@@ -95,6 +95,7 @@ export default function Portfolio() {
       </div>
 
       <Swiper
+        className="projects-swiper"
         modules={[Autoplay, Pagination]}
 
         autoplay={{
@@ -105,14 +106,11 @@ export default function Portfolio() {
         pagination={{
         clickable: true,
         }}
-        
+
         loop={true}
         spaceBetween={25}
         breakpoints={{
           0: {
-        slidesPerView: 1,
-          },
-          640: {
         slidesPerView: 1,
           },
           768: {
@@ -131,7 +129,7 @@ export default function Portfolio() {
 
               <img
                 src={project.image}
-                alt=""
+                alt={project.title}
               />
 
               <div className="project-content">
