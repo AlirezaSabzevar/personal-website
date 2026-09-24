@@ -97,7 +97,7 @@ export default function Portfolio() {
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{
-          delay: 3000,
+          delay: 1500,
           disableOnInteraction: false
         }}
         pagination={{
