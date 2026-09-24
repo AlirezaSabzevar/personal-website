@@ -146,6 +146,10 @@
 
 .sezar-policy-card-content {
   direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sezar-policy-card-content h3 {
