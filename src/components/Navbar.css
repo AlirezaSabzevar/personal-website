@@ -380,6 +380,7 @@
 
   .logo p{
     display: block;
+    font-weight: 800;
   }
 
   .navbar{
@@ -410,6 +411,11 @@
   /* .logo span{
     font-size:30px;
   } */
+
+  .logo p{
+    display: block;
+    font-weight: 600;
+  }
 
   .logo img{
     width: 100px;

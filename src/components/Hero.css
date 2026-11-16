@@ -405,6 +405,10 @@
     order:1;
   }
 
+  .hero-right img{
+    transform: scale(1.5);
+  }
+
   .hero-left p{
     margin-left:0;
     text-align:center;
