@@ -34,7 +34,8 @@
 } */
 
 .logo img{
-  width: 105px;
+  /* width: 125px; */
+  width: 80%;
   height: 85px;
 }
 
