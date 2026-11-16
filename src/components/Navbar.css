@@ -24,7 +24,7 @@
   display:flex;
   align-items:center;
   justify-content: center;
-  gap:5px;
+  gap:-10px;
 }
 
 /* .logo span{
@@ -36,8 +36,6 @@
 .logo img{
   width: 125px;
   height: 85px;
-  margin: 0;
-  padding: 0;
 }
 
 .logo p{
