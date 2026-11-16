@@ -15,8 +15,8 @@
 
 .about-content{
   display:grid;
-  grid-template-columns: 420px 1fr;
-  gap:30px;
+  grid-template-columns: 350px 1fr;
+  /* gap:30px; */
   align-items:center;
 }
 .about-image img{
