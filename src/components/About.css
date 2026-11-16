@@ -22,7 +22,7 @@
 
 .about-image img{
   /* width:100%; */
-  width:180px;
+  width:240px;
   height:300px;
   object-fit:fill;
   border-radius:20px;
@@ -148,6 +148,7 @@
   .about-image img{
     width: 80%;
     height:auto;
+    margin: auto;
   }
 
   .about-text h2{
