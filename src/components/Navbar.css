@@ -378,9 +378,9 @@
     height: 80px;
   }
 
-  /* .logo p{
-    display:none;
-  } */
+  .logo p{
+    display: block;
+  }
 
   .navbar{
     width:95%;
