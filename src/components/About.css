@@ -28,6 +28,7 @@
 }
 
 .about-text{
+  background-color: tomato;
   direction: rtl;
 }
 .about-text h2{
