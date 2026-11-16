@@ -36,6 +36,8 @@
 .logo img{
   width: 125px;
   height: 85px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo p{
