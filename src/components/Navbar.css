@@ -34,9 +34,9 @@
 } */
 
 .logo img{
-  /* width: 125px;
-  height: 85px; */
-  font-size: 10px;
+  width: 125px;
+  height: 85px;
+  object-fit: cover;
 }
 
 .logo p{
