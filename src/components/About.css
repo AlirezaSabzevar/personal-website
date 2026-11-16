@@ -149,6 +149,10 @@
     margin: auto;
   }
 
+  .about-text{
+    padding: 0 15px;
+  }
+
   .about-text h2{
 
     justify-content:center;
