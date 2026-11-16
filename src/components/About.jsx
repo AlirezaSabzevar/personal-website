@@ -1,6 +1,6 @@
 import "./About.css";
 
-import profile from "../assets/ChatGPT3.png";
+import profile from "../assets/sezar_img.png";
 
 import {
   FaPhone,

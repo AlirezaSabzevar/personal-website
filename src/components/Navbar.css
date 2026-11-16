@@ -26,10 +26,15 @@
   gap:10px;
 }
 
-.logo span{
+/* .logo span{
   color:#3b82f6;
   font-size:40px;
   font-weight:900;
+} */
+
+.logo img{
+  width: 100px;
+  height: 100px;
 }
 
 .logo p{

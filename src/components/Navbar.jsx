@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import logo from "../assets/sezar_logo.png";
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
@@ -51,7 +52,8 @@ export default function Navbar() {
     <>
     <nav className="navbar">
       <div className="logo">
-        <span>AS</span>
+        {/* <span>AS</span> */}
+        <img src={logo} alt="sezar_logo" />
         <p>Alireza Sabzevar</p>
       </div>
 
