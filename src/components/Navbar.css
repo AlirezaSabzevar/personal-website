@@ -6,9 +6,9 @@
 .navbar{
   width:90%;
   margin:20px auto;
-  padding:18px 35px;
+  padding:18px 25px;
   display:flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items:center;
   background:rgba(255,255,255,0.03);
   backdrop-filter: blur(20px);
@@ -34,14 +34,12 @@
 } */
 
 .logo img{
-  position: absolute;
   width: 125px;
   height: 85px;
 }
 
 .logo p{
   font-weight:700;
-  margin-left: 100px;
 }
 
 .navbar ul{
