@@ -166,7 +166,7 @@
   }
 
   .info-grid{
-    padding: 0 20px;
+    padding: 0 14px;
     grid-template-columns:
     repeat(2,1fr);
   }
