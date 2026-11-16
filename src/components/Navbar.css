@@ -6,7 +6,7 @@
 .navbar{
   width:90%;
   margin:20px auto;
-  padding:18px 25px;
+  padding:18px 35px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -34,8 +34,9 @@
 } */
 
 .logo img{
-  width: 125px;
-  height: 85px;
+  /* width: 125px;
+  height: 85px; */
+  font-size: 20px;
 }
 
 .logo p{
