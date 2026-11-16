@@ -17,13 +17,13 @@
   display:grid;
   /* grid-template-columns: 420px 1fr; */
   grid-template-columns: 1fr 1fr;
-  gap:50px;
+  gap:40px;
   align-items:center;
 }
 
 .about-image img{
   /* width:100%; */
-  width:300px;
+  width:400px;
   height:300px;
   object-fit:fill;
   border-radius:20px;
@@ -31,7 +31,7 @@
 }
 
 .about-text{
-    direction: rtl;
+  direction: rtl;
 }
 .about-text h2{
   display:flex;
