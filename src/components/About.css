@@ -16,12 +16,12 @@
 .about-content{
   display:grid;
   grid-template-columns: 1fr 2fr;
-  gap:30px;
+  gap:20px;
   align-items:center;
 }
 .about-image{
   background-color: tomato;
-  width: 355px;
+  /* width: 355px; */
 }
 .about-image img{
   width:100%;
