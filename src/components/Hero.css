@@ -399,6 +399,7 @@
   .hero-left{
     order:2;
     text-align:center;
+    padding: 0 30px;
   }
 
   .hero-right{
