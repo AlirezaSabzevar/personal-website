@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../assets/sezar_logo.png";
+import logo from "../assets/sezar_logo_80x80.png";
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
