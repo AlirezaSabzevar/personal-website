@@ -402,7 +402,7 @@
   .navbar{
     width:calc(100% - 20px);
     margin:10px;
-    padding:14px 18px;
+    padding:14px 12px;
     top:10px;
   }
 
@@ -416,8 +416,6 @@
   }
 
   .logo img{
-    /* width: 70px;
-    height: 70px; */
     transform: scale(0.65);
   }
 
