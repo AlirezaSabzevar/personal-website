@@ -371,10 +371,9 @@
     display:block;
   }
 
-  /* .logo img{
-    width: 115px;
-    height: 80px;
-  } */
+  .logo img{
+    transform: scale(0.78);
+  }
 
   .logo p{
     display: block;
